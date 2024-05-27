@@ -25,3 +25,61 @@ header {
     text-align: center;
    font-size: 24px; 
 }
+nav ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 15px;
+    transition: background-color 0.8s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 88px;
+}
+
+main {
+    padding: 27em;
+}
+
+h1, h2 {
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+  background-color: #957;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #957;
+    color: white;
+    text-align: center;
+    padding: 0.1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  
+}
+.search-form input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  font-size: 19px;
+  
