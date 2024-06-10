@@ -3,6 +3,7 @@ body{
   background:#DBDCFF;
   color:white;
   text-align:center;
+    margin: 0.0px;
 }
 img {
     max-width: 100%;
@@ -30,7 +31,7 @@ header {
 
 nav ul li {
     display: inline;
-    margin: 0 5px;
+    margin: 0 7px;
 }
 
 nav ul li a {
@@ -72,7 +73,7 @@ footer {
     background-color: #957;
     color: white;
     text-align: center;
-    padding: 0.1em 0;
+    padding: 0.2em 0;
     position: fixed;
     width: 100%;
     bottom: 0;
