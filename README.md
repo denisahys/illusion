@@ -9,7 +9,7 @@ Denisa Hysllari, matricola 930
 Docente Matteo Baccan
 
 ELEMENTI PRINCIPALI DEL SITO WEB
-• Nome dell'azienda
+• Illusion
 
 • Navbar per la navigazione del sito più semplificata
 
@@ -29,3 +29,5 @@ SITI UTILIZZATI PER LA CREAZIONE DEL SITO
 • ChatGPT
 
 • Github
+
+• Netlify
