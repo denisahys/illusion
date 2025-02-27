@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="profumi, fragranze naturali">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ILLUSION</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
+    <!-- Alert di Benvenuto -->
+    <script>
+        window.onload = function() {
+            alert("Benvenuto nel nostro sito! :) \nSolo per oggi il 20% di sconto!");
+        };
+    </script>
+
     <header>
-        <!-- Barra di ricerca -->
         <div class="search-container">
             <input type="text" placeholder="Cerca..." id="search">
             <button type="submit"><i class="fas fa-search"></i></button>
         </div>
-        
+
         <h1>ILLUSION</h1>
+
+        <!-- Icona del menu hamburger (visibile solo su mobile) -->
         <div class="menu-toggle">
             <i class="fas fa-bars"></i>
         </div>
+
         <nav>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -31,8 +42,10 @@
         </nav>
     </header>
 
+    <!-- Immagine principale -->
     <img src="https://hips.hearstapps.com/hmg-prod/images/ginza-ss21-floral-bouquet-visual-04-rgb-web-1x1-300dpi-1618421910.jpg?crop=0.984xw:0.492xh;0,0.0931xh&resize=1200:*" class="image-small" alt="Product Image">
-
+    
+    <!-- Sezione Shop -->
     <section id="shop">
         <h2>Shop</h2>
         <p>Il nostro catalogo</p>
@@ -40,29 +53,32 @@
             <div class="product">
                 <img src="https://i.pinimg.com/originals/37/6e/d7/376ed70cfe8a4584b642b86fbec93248.jpg" alt="Prodotto 1">
                 <h3>TROPICAL LIME</h3>
-                <p>Fresco e vivace, che cattura l'essenza del lime tropicale...</p>
+                <p>Fresco e vivace, che cattura l'essenza del lime tropicale.</p>
                 <p>Prezzo: €42.00</p>
             </div>
             <div class="product">
                 <img src="https://i.pinimg.com/originals/a6/48/b6/a648b623713528e15bb850b85921220a.png" alt="Prodotto 2">
                 <h3>PINK SHINE</h3>
-                <p>Fresco e fruttato, con note di fiori rosa e frutti dolci...</p>
+                <p>Fresco e fruttato, con note di fiori rosa e frutti dolci.</p>
                 <p>Prezzo: €57.00</p>
             </div>
             <div class="product">
                 <img src="https://i.pinimg.com/originals/8c/1a/1d/8c1a1d2e4bcf6308601c9f7bc8042211.jpg" alt="Prodotto 3">
                 <h3>COTTON DREAMS</h3>
-                <p>Morbido e avvolgente, ispirato alla leggerezza del cotone...</p>
+                <p>Morbido e avvolgente, ispirato alla leggerezza del cotone.</p>
                 <p>Prezzo: €68.95</p>
             </div>
         </div>
     </section>
 
+    <!-- Sezione Chi Siamo -->
     <section id="chi-siamo">
         <h2>Chi siamo</h2>
         <p>Illusion dona armonia alla tua vita!</p>
+        <p>Illusion è un'azienda che nasce con l’obiettivo di portare armonia e benessere attraverso fragranze uniche.</p>
     </section>
 
+    <!-- Iscrizione al sito -->
     <section id="join-us">
         <div class="form-container">
             <h2>Iscriviti e avrai il 30% di sconto sul primo ordine!</h2>
@@ -75,12 +91,14 @@
         </div>
     </section>
 
+    <!-- Mappa -->
     <section id="dove-trovarci" class="location">
         <h2>Siamo qui!</h2>
         <p>Novara, Italia 28100</p>
-        <iframe src="https://www.google.com/maps/embed?..." width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2799.451109398424!2d8.61426007627275!3d45.44056497107356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDXCsDI2JzI2LjAiTiA4wrAzNycwMC42IkU!5e0!3m2!1sit!2sit!4v1740596344205!5m2!1sit!2sit" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-left">
@@ -97,14 +115,19 @@
         </div>
     </footer>
 
+    <!-- Script -->
     <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+        // Gestione del menu hamburger
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
         });
     </script>
-    <script src="index.js"></script>
+
 </body>
 </html>
 
