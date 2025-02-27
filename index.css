@@ -3,9 +3,11 @@ body {
   background: #DBDCFF;
   color: white;
   text-align: center;
-  margin: 0;
+  margin: 0.0px;
   position: relative;
   overflow-x: hidden;
+  
+  
 }
 
 /* Aggiungi l'animazione dello sfondo */
@@ -16,65 +18,42 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://source.unsplash.com/1920x1080/?nature,water');
+  background-image: url('https://source.unsplash.com/1920x1080/?nature,water'); /* Sostituisci con l'URL del tuo sfondo */
   background-size: cover;
   background-position: center;
   z-index: -1;
   animation: moveBackground 10s linear infinite;
 }
 
+/* Animazione per lo sfondo */
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px; /* Bordo arrotondato */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Contenitore delle immagini responsive */
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  padding: 20px;
-}
-
-.image-container img {
-  max-width: calc(33.33% - 10px);
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.image-container img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Layout per mobile */
-@media (max-width: 768px) {
-  .image-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .image-container img {
-    max-width: 90%;
-  }
+  transform: scale(1.05); /* Effetto di ingrandimento al passaggio del mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombra più grande */
 }
 
 header {
+  background-color: rgba(51, 51, 51, 0.8);
   background-color: #957;
   padding: 1em 0;
   text-align: center;
-  font-size: 24px;
+  font-size: 24px; 
 }
 
 nav ul li {
@@ -103,17 +82,29 @@ h1, h2 {
 }
 
 section {
-  background-color: #957;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   transition: transform 0.4s ease, box-shadow 0.3s ease;
+  background-color: #957;
 }
 
 section:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #957;
+  color: white;
+  text-align: center;
+  padding: 0.2em 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 
 .search-form input {
@@ -122,110 +113,4 @@ section:hover {
   border-radius: 5px 0 0 5px;
   outline: none;
   font-size: 19px;
-}
-
-.location iframe {
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-footer {
-  background-color: #7A7DBB;
-  color: #000;
-  padding: 10px 0;
-  font-size: 10px;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer-left, .footer-right {
-  flex: 1;
-  padding: 0 10px;
-}
-
-.footer-left p {
-  margin: 1px 0;
-}
-
-.footer-right a {
-  color: white;
-  text-decoration: none;
-  margin: 1px 0;
-  display: block;
-}
-
-.footer-right a:hover {
-  color: #ddd;
-}
-
-.footer-right h3 {
-  margin: 1px 0;
-  font-size: 16px;
-}
-/* Stili per il menu burger */
-.burger-menu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.burger-menu div {
-  width: 30px;
-  height: 4px;
-  background-color: white;
-  margin: 5px 0;
-  transition: 0.4s;
-}
-
-/* Stili per la navigazione */
-.nav-menu {
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
-
-/* Stili per mobile */
-@media (max-width: 768px) {
-  .burger-menu {
-    display: flex;
-  }
-
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #957;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .nav-menu.active {
-    display: flex;
-  }
-
-  .nav-menu li {
-    padding: 10px;
-    text-align: center;
-  }
-
-  .nav-menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-  }
 }
