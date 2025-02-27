@@ -243,4 +243,17 @@ img:hover {
 .menu-toggle i {
     font-size: 30px;
 }
- 
+ .nav-links {
+    list-style-type: none; /* Rimuove i puntini */
+    padding: 0; /* Rimuove il padding */
+    margin: 0; /* Rimuove il margin */
+}
+/* Colore bianco per i link nel menu hamburger */
+.nav-links li a {
+    color: white; /* Colore per i link nel menu hamburger */
+}
+
+/* Colore nero per i link nel resto del sito (sezioni) */
+nav ul li a {
+    color: #000; /* Colore per i link nelle sezioni */
+}
