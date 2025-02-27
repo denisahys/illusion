@@ -8,7 +8,133 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Inserire qui il CSS che segue */
+      header {
+            background-color: #7A7DBB;
+            padding: 1em 0;
+            font-size: 1em;
+            color: #000;
+        }
+
+     
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #000;
+            text-decoration: none;
+            padding: 0.75em 1.25em;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-form button {
+            background-color: #fff;
+            color: #7A7DBB;
+            cursor: pointer;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5em;
+            color: #000;
+        }
+
+        footer {
+            background-color: #7A7DBB;
+            color: #000;
+            text-align: center;
+            padding: 0.5em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            color: #000;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin: 2em auto;
+            max-width: 400px;
+        }
+
+        .form-container button {
+            background-color: #7A7DBB;
+            color: #000;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #746;
+            color: #fff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Riduzione delle immagini */
+        .product img, .image-small {
+            width: qpx;  /* Riduzione a 300px */
+            height: 300px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.2em;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 0.5em 0;
+            }
+
+            .products-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product {
+                max-width: 90%;
+            }
+
+            .search-form {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .search-form input, .search-form button {
+                width: 100%;
+                margin: 0.2em 0;
+            }
+
+            .form-container {
+                width: 90%;
+            }
+
+            /* Riduzione immagini per schermi piccoli */
+            .product img, .image-small {
+                width: 200px;  /* Riduzione ulteriore su dispositivi mobili */
+                height: 200px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -16,10 +142,11 @@
         <h1>ILLUSION</h1>
         <nav>
             <ul>
-                <li><a href="#chisiamo">Home</a></li>
-                <li><a href="#nostriprodotti">Chi siamo</a></li>
-                <li><a href="#dovetrovarci">Shop</a></li>
-                <li><a href="#Contattaci">Dove trovarci</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#chi-siamo">Chi siamo</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#dove-trovarci">Dove trovarci</a></li>
+                <li><a href="#cart"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
             <form class="search-form">
                 <input type="text" placeholder="Search...">
@@ -27,7 +154,6 @@
             </form>
         </nav>
     </header>
-
     <img src="https://i.pinimg.com/originals/45/b9/1c/45b91cd4143e60bef51c2d0c3fe7c426.jpg" class="image-small" alt="Product Image">
 
     <section id="chi-siamo">
@@ -64,7 +190,7 @@
     <section id="dove-trovarci" class="location">
         <h2>Siamo qui!</h2>
         <p>Novara, Italia 28100</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2799.451109398424!2d8.61426007627275!3d45.44056497107356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDXCsDI2JzI2LjAiTiA8wrAzNycwMC42IkU!5e0!3m2!1sit!2sit!4v1740596344205!5m2!1sit!2sit" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2799.451109398424!2d8.61426007627275!3d45.44056497107356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDXCsDI2JzI2LjAiTiA4wrAzNycwMC42IkU!5e0!3m2!1sit!2sit!4v1740596344205!5m2!1sit!2sit" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <section id="join-us">
@@ -94,5 +220,5 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
+
+  
