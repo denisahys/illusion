@@ -11,7 +11,14 @@
 </head>
 <body>
     <header>
-        
+   <body>
+    <!-- Barra di ricerca -->
+    <div class="search-container">
+        <input type="text" placeholder="Cerca..." id="search">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+
+      
     <header>
     <h1>ILLUSION</h1>
     <nav>
@@ -28,9 +35,11 @@
         </ul>
     </nav>
 </header>
-
+ <!-- Immagine principale-->
     <img src="https://hips.hearstapps.com/hmg-prod/images/ginza-ss21-floral-bouquet-visual-04-rgb-web-1x1-300dpi-1618421910.jpg?crop=0.984xw:0.492xh;0,0.0931xh&resize=1200:*" class="image-small" alt="Product Image">
-
+     
+  <!-- sezioni -->
+     
     <section id="chi-siamo">
         <h2>Chi siamo</h2>
         <p>Illusion è un'azienda che dona armonia alla tua vita.</p>
@@ -62,15 +71,11 @@
         </div>
     </section>
 
-    <section id="dove-trovarci" class="location">
-        <h2>Siamo qui!</h2>
-        <p>Novara, Italia 28100</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2799.451109398424!2d8.61426007627275!3d45.44056497107356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDXCsDI2JzI2LjAiTiA4wrAzNycwMC42IkU!5e0!3m2!1sit!2sit!4v1740596344205!5m2!1sit!2sit" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
+       <!-- iscrizione al sito -->
+     
     <section id="join-us">
         <div class="form-container">
-            <h2>Unisciti a Noi!</h2>
+            <h2>Iscriviti e avrai il 30% di sconto sul primo ordine!</h2>
             <form action="#" method="post">
                 <input type="text" name="name" placeholder="Nome" required>
                 <input type="email" name="email" placeholder="Email" required>
@@ -79,6 +84,15 @@
             </form>
         </div>
     </section>
+       <!-- mappa -->
+     
+    <section id="dove-trovarci" class="location">
+        <h2>Siamo qui!</h2>
+        <p>Novara, Italia 28100</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2799.451109398424!2d8.61426007627275!3d45.44056497107356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDXCsDI2JzI2LjAiTiA4wrAzNycwMC42IkU!5e0!3m2!1sit!2sit!4v1740596344205!5m2!1sit!2sit" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+     
 
     <!-- Footer -->
     <footer>
@@ -97,14 +111,14 @@
         </div>
     </footer>
 <script>
-    // Seleziona l'elemento del menu a discesa e l'icona del menu
+    // elemento del menu a discesa e icona del menu
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
 
-    // Aggiungi l'evento al click dell'icona per aprire/chiudere il menu
+    // click dell'icona per aprire/chiudere il menu
     menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
-</script src="script.js"></script
+</script src="index.js"></script
 </body>
 </html>
