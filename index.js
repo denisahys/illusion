@@ -1,9 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const burgerMenu = document.querySelector(".burger-menu");
-    const navMenu = document.querySelector(".nav-menu");
+<script>
+    // Seleziona il bottone dell'icona del menu (hamburger) e la lista dei link del menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-    burgerMenu.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
+    // Aggiungi l'evento al clic sull'icona
+    menuToggle.addEventListener('click', () => {
+        // Aggiungi o rimuovi la classe 'active' per aprire/chiudere il menu
+        navLinks.classList.toggle('active');
     });
-});
-
+</script>
