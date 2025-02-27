@@ -129,103 +129,38 @@ section:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-footer {
-  background-color: #7A7DBB;
-  color: #000;
-  padding: 10px 0;
-  font-size: 10px;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer-left, .footer-right {
-  flex: 1;
-  padding: 0 10px;
-}
-
-.footer-left p {
-  margin: 1px 0;
-}
-
-.footer-right a {
-  color: white;
-  text-decoration: none;
-  margin: 1px 0;
-  display: block;
-}
-
-.footer-right a:hover {
-  color: #ddd;
-}
-
-.footer-right h3 {
-  margin: 1px 0;
-  font-size: 16px;
-}
-/* Stili per il menu burger */
-.burger-menu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.burger-menu div {
-  width: 30px;
-  height: 4px;
-  background-color: white;
-  margin: 5px 0;
-  transition: 0.4s;
-}
-
 /* Stili per la navigazione */
 .nav-menu {
   display: flex;
   list-style: none;
   padding: 0;
 }
-
-/* Stili per mobile */
-@media (max-width: 768px) {
-  .burger-menu {
+/* Menu orizzontale sui dispositivi grandi */
+.nav-links {
     display: flex;
-  }
+    gap: 20px;
+}
 
-  .nav-menu {
-    display: none;
+/* Menu a scomparsa (hamburger) su dispositivi mobili */
+.nav-links {
+    display: none;  /* Nasconde il menu su schermi piccoli */
     flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #957;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .nav-menu.active {
-    display: flex;
-  }
-
-  .nav-menu li {
-    padding: 10px;
+    gap: 10px;
     text-align: center;
-  }
+    width: 100%;
+}
 
-  .nav-menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+/* Menu visibile quando 'active' è aggiunto */
+.nav-links.active {
+    display: flex;
+}
+
+/* Stile per l'icona del menu */
+.menu-toggle {
     display: block;
-  }
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 30px;
 }
