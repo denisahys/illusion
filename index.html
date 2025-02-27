@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,26 +9,14 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: system-ui, sans-serif;
-            background: #F3F4FB;
-            color: #000;
-            margin: 0;
-            text-align: center;
-        }
-
-        header {
+      header {
             background-color: #7A7DBB;
-            padding: 1.5em 0;
-            font-size: 1.5em;
+            padding: 1em 0;
+            font-size: 1em;
             color: #000;
         }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
+     
         nav ul li {
             display: inline;
             margin: 0 10px;
@@ -39,14 +28,6 @@
             padding: 0.75em 1.25em;
             border-radius: 20px;
             transition: background-color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-
-        .search-form input {
-            color: #000;
         }
 
         .search-form button {
@@ -111,7 +92,7 @@
 
         /* Riduzione delle immagini */
         .product img, .image-small {
-            width: 300px;  /* Riduzione a 300px */
+            width: qpx;  /* Riduzione a 300px */
             height: 300px;
             object-fit: cover;
         }
@@ -162,11 +143,21 @@
         <h1>ILLUSION</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#chi-siamo">Chi siamo</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#dove-trovarci">Dove trovarci</a></li>
-                <li><a href="#cart"><i class="fas fa-shopping-cart"></i></a></li>
+              <!-- barra menù -->
+    <header>
+        <nav>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="#chisiamo">Home</a></li>
+                <li><a href="#nostriprodotti">Chi siamo</a></li>
+                <li><a href="#dovetrovarci">Shop</a></li>
+                <li><a href="#Contattaci">Dove trovarci</a></li>
+            </ul>
+        </nav>
+    </header></i></a></li>
             </ul>
             <form class="search-form">
                 <input type="text" placeholder="Search...">
@@ -174,9 +165,6 @@
             </form>
         </nav>
     </header>
-
-    <img src="https://img.freepik.com/premium-photo/bottle-perfume-with-flowers-perfumes-pink-background_745528-16399.jpg" class="image-small" alt="Perfume Image">
-    <img src="https://i.pinimg.com/originals/b1/bf/95/b1bf95e4c91826b36f18253c5fbb5b52.jpg" class="image-small" alt="Product Image">
     <img src="https://i.pinimg.com/originals/45/b9/1c/45b91cd4143e60bef51c2d0c3fe7c426.jpg" class="image-small" alt="Product Image">
 
     <section id="chi-siamo">
@@ -191,19 +179,19 @@
         <div class="products-container">
             <div class="product">
                 <img src="https://i.pinimg.com/originals/37/6e/d7/376ed70cfe8a4584b642b86fbec93248.jpg" alt="Prodotto 1">
-                <h3>Prodotto 1</h3>
+                <h3>Lime</h3>
                 <p>Descrizione breve del prodotto 1.</p>
                 <p>Prezzo: €20.00</p>
             </div>
             <div class="product">
                 <img src="https://i.pinimg.com/originals/a6/48/b6/a648b623713528e15bb850b85921220a.png" alt="Prodotto 2">
-                <h3>Prodotto 2</h3>
-                <p>Descrizione breve del prodotto 2.</p>
+                <h3>Pink shine</h3>
+                <p>Pink shine con il suo aroma dolce e delicato di vaniglia e petali di rose</p>
                 <p>Prezzo: €35.00</p>
             </div>
             <div class="product">
                 <img src="https://i.pinimg.com/originals/8c/1a/1d/8c1a1d2e4bcf6308601c9f7bc8042211.jpg" alt="Prodotto 3">
-                <h3>Prodotto 3</h3>
+                <h3>Cotton</h3>
                 <p>Descrizione breve del prodotto 3.</p>
                 <p>Prezzo: €50.00</p>
             </div>
@@ -243,6 +231,3 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
-<script src="script.js"></script>
