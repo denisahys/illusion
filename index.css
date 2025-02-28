@@ -1,37 +1,37 @@
+
+/* Importa il font */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5F5; /* Grigio chiaro neutro */
-    color: #333; /* Testo scuro per contrasto */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Header */
 header {
-    background-color: #7D4B8C; /* Viola morbido */
+    background-color: #222;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
+    padding: 15px 30px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 24px;
 }
 
 /* Navbar */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 
 .nav-links li {
@@ -42,50 +42,38 @@ header h1 {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 18px;
-    padding: 8px 15px;
-    border-radius: 8px;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
-    background-color: #5C2E63; 
+    color: #f39c12;
 }
 
 /* Menu mobile */
 .menu-toggle {
     display: none;
-    font-size: 30px;
+    font-size: 24px;
     cursor: pointer;
-    color: white;
 }
 
 /* Barra di ricerca */
 .search-container {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 10px;
 }
 
 .search-container input {
-    padding: 8px;
+    padding: 5px;
     border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 16px;
+    border-radius: 5px;
 }
 
 .search-container button {
-    background-color: #7D4B8C; 
+    background-color: #f39c12;
     border: none;
-    padding: 8px 15px;
+    padding: 5px 10px;
     cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.search-container button:hover {
-    background-color: #5C2E63; 
 }
 
 .search-container button i {
@@ -96,16 +84,14 @@ header h1 {
 .image-small {
     width: 100%;
     height: auto;
-    margin-top: 100px;
+    margin-top: 80px;
     object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Sezione Shop */
 #shop {
     text-align: center;
-    padding: 80px 20px;
+    padding: 50px 20px;
     background-color: white;
 }
 
@@ -118,103 +104,77 @@ header h1 {
 
 .product {
     background: #fff;
-    padding: 25px;
-    border-radius: 15px;
+    padding: 15px;
+    border-radius: 8px;
     text-align: center;
     width: 250px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .product h3 {
-    color: #7D4B8C; 
+    color: #f39c12;
 }
 
 /* Sezione Chi siamo */
 #chi-siamo {
-    background-color: #F5F5F5; 
+    background-color: #f4f4f4;
     text-align: center;
-    padding: 80px 20px;
-    color: #333;
-}
-
-#chi-siamo h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #7D4B8C; 
+    padding: 50px 20px;
 }
 
 /* Iscrizione */
 #join-us {
-    background: #F5F5F5; 
-    color: #333;
+    background: #222;
+    color: white;
     text-align: center;
-    padding: 80px 20px;
-}
-
-#join-us h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #7D4B8C; 
+    padding: 50px 20px;
 }
 
 #join-us input {
     display: block;
-    margin: 15px auto;
-    padding: 12px;
+    margin: 10px auto;
+    padding: 8px;
     width: 80%;
-    max-width: 350px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+    max-width: 300px;
 }
 
 #join-us button {
-    background-color: #7D4B8C; 
+    background-color: #f39c12;
     border: none;
-    padding: 12px 30px;
+    padding: 10px 20px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
 
 #join-us button:hover {
-    background-color: #5C2E63; 
+    background-color: #e67e22;
 }
 
 /* Mappa */
 .location {
     text-align: center;
-    padding: 60px 20px;
+    padding: 50px 20px;
 }
 
 .location iframe {
     max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 /* Footer */
 footer {
-    background-color: #7D4B8C; 
+    background-color: #222;
     color: white;
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px;
 }
 
 .footer-content {
@@ -231,15 +191,13 @@ footer {
 }
 
 .footer-right a {
-    color: white;
+    color: #f39c12;
     text-decoration: none;
-    margin-right: 15px;
-    font-size: 18px;
-    font-weight: bold;
+    margin-right: 10px;
 }
 
 .footer-right a:hover {
-    color: #5C2E63; 
+    color: #e67e22;
 }
 
 /* Responsive Design */
@@ -257,7 +215,7 @@ footer {
         right: 0;
         width: 200px;
         text-align: center;
-        padding: 20px;
+        padding: 10px;
     }
 
     .nav-links.active {
